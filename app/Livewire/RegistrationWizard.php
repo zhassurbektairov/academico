@@ -19,6 +19,8 @@ use Illuminate\Validation\Rules\Password;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
+protected array $rules = [];
+
 class RegistrationWizard extends Component
 {
     use ReportsErrors;
