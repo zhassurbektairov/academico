@@ -24,7 +24,10 @@ class RegistrationWizard extends Component
     use ReportsErrors;
     use WithFileUploads;
 
-    protected array $rules = [];
+    public function rules(): array
+    {
+        return [];
+    }
 
     public int $currentStep = 1;
 
