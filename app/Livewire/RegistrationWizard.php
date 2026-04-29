@@ -19,12 +19,12 @@ use Illuminate\Validation\Rules\Password;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
-protected array $rules = [];
-
 class RegistrationWizard extends Component
 {
     use ReportsErrors;
     use WithFileUploads;
+
+    protected array $rules = [];
 
     public int $currentStep = 1;
 
